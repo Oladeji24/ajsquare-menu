@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AJ Square Lounge | Digital Menu</title>
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #FFD700;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    header {
+      margin-top: 40px;
+    }
+
+    header img {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      border: 2px solid #FFD700;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 26px;
+    }
+
+    p {
+      margin: 0 0 20px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    iframe {
+      width: 90%;
+      max-width: 700px;
+      height: 80vh;
+      border: 2px solid #FFD700;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+
+    footer {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        height: 70vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="assets/logo.png" alt="AJ Square Lounge Logo">
+    <h1>AJ Square Lounge</h1>
+    <p>Welcome! View our menu and prices below.</p>
+  </header>
+
+  <!-- Embedded Menu PDF -->
+  <iframe src="assets/AJ SQUARE LOUNGE PRICE LIST.pdf"></iframe>
+
+  <footer>
+    <p>&copy; 2025 AJ Square Lounge. All rights reserved.</p>
+  </footer>
+</body>
+</html>
