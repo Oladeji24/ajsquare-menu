@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AJ Square Lounge | Digital Menu</title>
 
-  <!-- Favicon (optional) -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo.png">
 
   <style>
@@ -47,25 +47,27 @@
       color: #fff;
     }
 
-    iframe {
-      width: 90%;
-      max-width: 700px;
-      height: 80vh;
-      border: 2px solid #FFD700;
+    .button {
+      background: #FFD700;
+      color: #000;
+      padding: 14px 28px;
       border-radius: 10px;
-      background-color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 25px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #e6c200;
     }
 
     footer {
-      margin-top: 15px;
+      margin-top: 40px;
       font-size: 13px;
       color: #aaa;
-    }
-
-    @media (max-width: 600px) {
-      iframe {
-        height: 70vh;
-      }
     }
   </style>
 </head>
@@ -74,11 +76,13 @@
   <header>
     <img src="assets/logo.png" alt="AJ Square Lounge Logo">
     <h1>AJ Square Lounge</h1>
-    <p>Welcome! View our menu and prices below.</p>
+    <p>Welcome! Tap below to view our complete menu and prices.</p>
   </header>
 
-  <!-- Embedded Menu PDF -->
-  <iframe src="assets/AJ SQUARE LOUNGE PRICE LIST.pdf"></iframe>
+  <!-- Fixed Version (iPhone Compatible) -->
+  <a href="assets/AJ SQUARE LOUNGE PRICE LIST.pdf" target="_blank" class="button">
+    📜 View Full Menu (PDF)
+  </a>
 
   <footer>
     <p>&copy; 2025 AJ Square Lounge. All rights reserved.</p>
