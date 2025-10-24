@@ -64,6 +64,18 @@
       background: #e6c200;
     }
 
+    /* 👇 Added this for styled notice box */
+    .notice {
+      margin-top: 30px;
+      background: rgba(255, 215, 0, 0.1);
+      border: 1px solid #FFD700;
+      border-radius: 8px;
+      padding: 15px 20px;
+      color: #FFD700;
+      font-size: 15px;
+      max-width: 600px;
+    }
+
     footer {
       margin-top: 40px;
       font-size: 13px;
@@ -79,10 +91,13 @@
     <p>Welcome! Tap below to view our complete menu and prices.</p>
   </header>
 
-  <!-- Fixed Version (iPhone Compatible) -->
-  <a href="assets/" target="_blank" class="button">
-    📜 View Full Menu (PDF)
-  </a>
+  <!-- Temporarily disabled button -->
+  <a href="#" class="button" onclick="return false;">📜 View Full Menu (PDF)</a>
+
+  <!-- Notice message -->
+  <div class="notice">
+    Menu temporarily unavailable. Please check back soon.
+  </div>
 
   <footer>
     <p>&copy; 2025 AJ Square Lounge. All rights reserved.</p>
